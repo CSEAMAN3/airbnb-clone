@@ -1,0 +1,82 @@
+/*************
+General styling / Elements
+**************/
+
+/*************
+Images
+**************/
+
+.card-img {
+  width: 240px;
+}
+
+.card-info-star {
+  position: relative;
+  top: 1px;
+  color: var(--pnk);
+}
+
+/*************
+Buttons / Links / li / inputs
+**************/
+
+/*************
+Typography
+**************/
+
+.card-info-content {
+  margin-right: 0.5rem;
+}
+
+.card-info-rating,
+.card-info-review,
+.card-info-location {
+  font-weight: 300;
+}
+
+.card-info-rating,
+.card-info-review,
+.card-info-location,
+.card-description,
+.card-price {
+  font-size: 0.85rem;
+}
+
+.card-info-review {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.card-description,
+.price {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.soldout-text {
+  font-weight: 700;
+}
+
+/*************
+Layout
+**************/
+
+.card-container {
+  position: relative;
+  width: 240px;
+  margin-bottom: 2rem;
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 4px 4px 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--pnk) var(--pnk) var(--pnk) transparent;
+}
+
+/*************
+Media Queries
+**************/

@@ -1,0 +1,61 @@
+/*************
+General styling / Elements
+**************/
+
+/*************
+Images
+**************/
+
+.main-hero-img {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+/*************
+Buttons / Links / li / inputs
+**************/
+
+/*************
+Typography
+**************/
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero-text {
+  font-weight: 300;
+  max-width: 40ch;
+}
+
+/*************
+Layout
+**************/
+
+.hero-section {
+  padding: 2rem 0;
+}
+
+.cards-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+/*************
+Media Queries
+**************/
+
+@media (min-width: 800px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+
+  .main-hero-img {
+    margin-bottom: 3rem;
+  }
+}

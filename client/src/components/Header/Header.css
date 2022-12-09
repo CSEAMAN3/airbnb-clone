@@ -1,0 +1,144 @@
+/*************
+General styling / Elements
+**************/
+
+/*************
+Images
+**************/
+
+.header-logo {
+  width: 120px;
+}
+
+.header-nav-list-item-icon {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  color: var(--pnk);
+  position: relative;
+  top: 6px;
+}
+
+.header-nav-list-item-icon:hover {
+  color: var(--dpnk);
+}
+
+/*************
+Buttons / Links / li / inputs
+**************/
+
+.header-nav-list-item {
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+}
+
+.abnb,
+.login,
+.house,
+.person,
+.help {
+  /* display: block; */
+  text-align: center;
+  color: var(--wht);
+  background-color: var(--dpnk);
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  width: 100px;
+  bottom: -60px;
+}
+
+.house,
+.person {
+  width: 240px;
+  left: -120px;
+}
+
+.help {
+  left: -16px;
+}
+
+.header-nav-list-item:hover .abnb {
+  display: block;
+}
+
+.header-nav-list-item:hover .login {
+  display: block;
+}
+
+.header-nav-list-item:hover .house {
+  display: block;
+}
+
+.header-nav-list-item:hover .person {
+  display: block;
+}
+
+.header-nav-list-item:hover .help {
+  display: block;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--dpnk) transparent;
+}
+
+/* .abnb::after {
+  content: "Sign Up";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  font-size: 1rem;
+  color: var(--wht);
+  background-color: var(--pnk);
+} */
+
+/*************
+Typography
+**************/
+
+/*************
+Layout
+**************/
+
+header {
+  box-shadow: 2px 0 24px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo-container {
+  width: 120px;
+}
+
+.header-nav {
+  display: none;
+}
+
+/*************
+Media Queries
+**************/
+
+@media (min-width: 800px) {
+  .header-nav {
+    display: block;
+  }
+  .header-nav-list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+}
